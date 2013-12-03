@@ -55,7 +55,7 @@ public:
 		if (hHand)
 		{
 			TerminateThread(hHand,0);
-			
+						
 			hHand = NULL;
 		}
 	}
