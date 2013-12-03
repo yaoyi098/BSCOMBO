@@ -96,7 +96,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)OutDir\$(ConfigurationName)"
 			IntermediateDirectory="$(SolutionDir)InDir\$(ConfigurationName)"
 			ConfigurationType="1"
 			UseOfMFC="1"
