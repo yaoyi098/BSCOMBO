@@ -78,29 +78,29 @@ IDI_ICON1               ICON                    "res\\temp.ico"
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+IDD_ABOUTBOX DIALOGEX 0, 0, 101, 63
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "关于 abc"
+CAPTION "关于 BSCombo"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
-    LTEXT           "abc，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
-    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+    ICON            IDI_ICON1,IDC_STATIC,14,14,20,20
+    LTEXT           "BS连发，v1.0",IDC_STATIC,42,14,49,8,SS_NOPREFIX
+    LTEXT           "by YYM 2013",IDC_STATIC,42,26,51,8
+    DEFPUSHBUTTON   "确定",IDOK,24,42,50,14,WS_GROUP
 END
 
-IDD_ABC_DIALOG DIALOGEX 0, 0, 319, 201
+IDD_ABC_DIALOG DIALOGEX 0, 0, 129, 76
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
-CAPTION "abc"
+CAPTION "BSCOMBO"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "start",IDOK,58,180,50,14
-    PUSHBUTTON      "取消",IDCANCEL,249,180,50,14
-    EDITTEXT        IDC_EDIT1,177,65,40,14,ES_AUTOHSCROLL
-    GROUPBOX        "静态",IDC_STATIC,19,24,77,112
-    CONTROL         "F连点",IDC_RADIO_F,"Button",BS_AUTORADIOBUTTON | WS_GROUP,33,61,33,10
-    CONTROL         "左键连点",IDC_RADIO_LB,"Button",BS_AUTORADIOBUTTON,34,79,43,10
+    DEFPUSHBUTTON   "start",IDOK,14,55,50,14
+    PUSHBUTTON      "取消",IDCANCEL,72,55,50,14
+    EDITTEXT        IDC_EDIT1,61,24,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "选择",IDC_STATIC,7,7,52,46
+    CONTROL         "F连点",IDC_RADIO_F,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,19,33,10
+    CONTROL         "左键连点",IDC_RADIO_LB,"Button",BS_AUTORADIOBUTTON,14,37,43,10
 END
 
 
@@ -126,13 +126,13 @@ BEGIN
     BEGIN
         BLOCK "080403a8"
         BEGIN
-            VALUE "CompanyName", "TODO: <公司名>"
-            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "CompanyName", "YYM"
+            VALUE "FileDescription", "BS连发"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "abc.exe"
-            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
-            VALUE "OriginalFilename", "abc.exe"
-            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "LegalCopyright", "YYM保留所有权利。"
+            VALUE "OriginalFilename", "BSCombo.exe"
+            VALUE "ProductName", "BSCombo"
             VALUE "ProductVersion", "1.0.0.1"
         END
     END
@@ -154,17 +154,17 @@ BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 163
+        RIGHTMARGIN, 94
         TOPMARGIN, 7
-        BOTTOMMARGIN, 55
+        BOTTOMMARGIN, 56
     END
 
     IDD_ABC_DIALOG, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 312
+        RIGHTMARGIN, 122
         TOPMARGIN, 7
-        BOTTOMMARGIN, 194
+        BOTTOMMARGIN, 69
     END
 END
 #endif    // APSTUDIO_INVOKED
@@ -177,7 +177,7 @@ END
 
 STRINGTABLE 
 BEGIN
-    IDS_ABOUTBOX            "关于 abc(&A)..."
+    IDS_ABOUTBOX            "关于 BSCombo(&A)..."
 END
 
 #endif    // 中文(中华人民共和国) resources
