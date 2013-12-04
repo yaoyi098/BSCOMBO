@@ -23,6 +23,7 @@ public:
 	{
 		CloseTHand(hHand);
 		nid.uFlags = NULL;
+		bEndFlag = false;
 		Shell_NotifyIcon(NIM_DELETE,&nid);
 
 	}
@@ -54,16 +55,16 @@ public:
 	{
 		if (hHand)
 		{
-			TerminateThread(hHand,0);
+			bEndFlag = true;
 						
 			hHand = NULL;
 		}
 	}
-private:
-	HANDLE hHand;
 public:
+	HANDLE hHand;
 	CEdit m_edit;
 	NOTIFYICONDATA nid;
+	bool bEndFlag;
 
 public:
 	afx_msg void OnBnClickedButton1();
