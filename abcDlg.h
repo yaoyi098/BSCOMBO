@@ -24,6 +24,9 @@ public:
 		CloseTHand(hHand);
 		nid.uFlags = NULL;
 		bEndFlag = false;
+		beFlag = false;
+		::UnregisterHotKey(m_hWnd,4001);
+		::UnregisterHotKey(m_hWnd,4002);
 		Shell_NotifyIcon(NIM_DELETE,&nid);
 
 	}
@@ -65,6 +68,7 @@ public:
 	CEdit m_edit;
 	NOTIFYICONDATA nid;
 	bool bEndFlag;
+	bool beFlag;
 
 public:
 	afx_msg void OnBnClickedButton1();

@@ -99,7 +99,7 @@
 			OutputDirectory="$(SolutionDir)OutDir\$(ConfigurationName)"
 			IntermediateDirectory="$(SolutionDir)InDir\$(ConfigurationName)"
 			ConfigurationType="1"
-			UseOfMFC="1"
+			UseOfMFC="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"
 			>
@@ -127,7 +127,7 @@
 				EnableIntrinsicFunctions="true"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
 				MinimalRebuild="false"
-				RuntimeLibrary="0"
+				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
@@ -258,11 +258,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\res\icon1.ico"
+				RelativePath=".\res\temp.ico"
 				>
 			</File>
 			<File
-				RelativePath=".\res\temp.ico"
+				RelativePath=".\res\temp1.ico"
 				>
 			</File>
 		</Filter>

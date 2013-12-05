@@ -72,6 +72,7 @@ END
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\abc.ico"
 IDI_ICON1               ICON                    "res\\temp.ico"
+IDI_ICON2               ICON                    "res\\temp1.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
